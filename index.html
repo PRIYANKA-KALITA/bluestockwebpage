@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming IPO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-weight: bold;
+            font-size: 24px;
+            color: black;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .auth a {
+            margin-left: 20px;
+            color: black;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .ipo-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .ipo-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .ipo-item img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .ipo-buttons {
+            margin-top: 10px;
+        }
+
+        .ipo-buttons a {
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            color: white;
+            background-color: #007bff;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .ipo-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        .faq {
+            margin-top: 20px;
+        }
+
+        .faq h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .faq-item-header span {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        .faq-item .answer {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .faq-item.open .answer {
+            display: block;
+        }
+
+        .faq-item.open .faq-item-header span {
+            content: '-';
+        }
+    </style>
+    <script>
+        function toggleAnswer(element) {
+            const isOpen = element.classList.contains('open');
+            element.classList.toggle('open');
+            
+            
+            const sign = element.querySelector('.faq-item-header span');
+            sign.textContent = isOpen ? '+' : '-';
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="public/logo.png" alt="Bluestock Logo">
+            <span>BLUESTOCK</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">MEDIA</a></li>
+                <li><a href="#">SUPPORT</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <a href="#" class="sign-in">Sign In</a>
+            <a href="#" class="sign-up">Sign Up Now</a>
+        </div>
+    </header>
+    <main>
+        <h1>Upcoming IPO</h1>
+        <p>Companies that have filed for an IPO with SEBI. Few details might be disclosed by the companies later.</p>
+
+        <!-- IPO Items Section -->
+        <div class="ipo-container">
+            <div class="ipo-item">
+                <img src="public/nova.png" alt="Nova Agritech IPO Details">
+                <div class="ipo-buttons">
+                    <a href="#" target="_blank">RHP</a>
+                    <a href="#" target="_blank">DRHP</a>
+                </div>
+            </div>
+
+            <div class="ipo-item">
+                <img src="public/boat.jpg" alt="Boat IPO Details">
+                <div class="ipo-buttons">
+                    <a href="#" target="_blank">RHP</a>
+                    <a href="#" target="_blank">DRHP</a>
+                </div>
+            </div>
+
+            <div class="ipo-item">
+                <img src="public/epack.jpg" alt="CMR Green Technologies IPO Details">
+                <div class="ipo-buttons">
+                    <a href="#" target="_blank">RHP</a>
+                    <a href="#" target="_blank">DRHP</a>
+                </div>
+            </div>
+
+            <div class="ipo-item">
+                <img src="public/ixigo.jpg" alt="EPACK Durable IPO Details">
+                <div class="ipo-buttons">
+                    <a href="#" target="_blank">RHP</a>
+                    <a href="#" target="_blank">DRHP</a>
+                </div>
+            </div>
+
+            <div class="ipo-item">
+                <img src="public/mobiqick.jpg" alt="Ola Electric IPO Details">
+                <div class="ipo-buttons">
+                    <a href="#" target="_blank">RHP</a>
+                    <a href="#" target="_blank">DRHP</a>
+                </div>
+            </div>
+
+            <div class="ipo-item">
+                <img src="public/kidsclinic.jpg" alt="PKH Ventures IPO Details">
+                <div class="ipo-buttons">
+                    <a href="#" target="_blank">RHP</a>
+                    <a href="#" target="_blank">DRHP</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="faq-item-header">
+                    <strong>How to Subscribe to an IPO?</strong>
+                    <span>+</span>
+                </div>
+                <div class="answer">
+                    <ul>
+                        <li>Step 1: Login to your respective service provider.</li>
+                        <li>Step 2: Click on the IPO button.</li>
+                        <li>Step 3: Select the IPO you want to bid and enter the relevant details.</li>
+                        <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="faq-item-header">
+                    <strong>Should I buy an IPO first day?</strong>
+                    <span>+</span>
+                </div>
+                <div class="answer">
+                    It depends on the company's fundamentals and market conditions. Some IPOs might give you good returns
+                    on the first day, but others could drop in value. Research and understand the risks before making a
+                    decision.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="faq-item-header">
+                    <strong>How do you know if an IPO is good?</strong>
+                    <span>+</span>
+                </div>
+                <div class="answer">
+                    A good IPO is usually backed by strong fundamentals, a solid business model, and a growth strategy.
+                    Analyzing the company's financial health, industry potential, and management team can help assess
+                    the quality of the IPO.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="faq-item-header">
+                    <strong>How to check IPO start date?</strong>
+                    <span>+</span>
+                </div>
+                <div class="answer">
+                    You can check the IPO start date on the company's website, through your broker, or on financial news
+                    websites. The start date is usually announced a few days before the IPO opens for subscription.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="faq-item-header">
+                    <strong>What is IPO issue size?</strong>
+                    <span>+</span>
+                </div>
+                <div class="answer">
+                    The issue size refers to the total value of the IPO, calculated by multiplying the number of shares
+                    offered by the offer price. It indicates the amount of capital the company aims to raise.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="faq-item-header">
+                    <strong>How to sell IPO shares?</strong>
+                    <span>+</span>
+                </div>
+                <div class="answer">
+                    IPO shares can be sold through your brokerage account once the shares are listed on the stock
+                    exchange. You can place a sell order based on the current market price.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="faq-item-header">
+                    <strong>Can I cancel my IPO application?</strong>
+                    <span>+</span>
+                </div>
+                <div class="answer">
+                    Yes, you can cancel your IPO application before the allotment process begins. Check with your broker
+                    for the cancellation process and deadlines.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                <div class="faq-item-header">
+                    <strong>How many lots should I apply for in an IPO?</strong>
+                    <span>+</span>
+                </div>
+                <div class="answer">
+                    The number of lots you should apply for depends on your investment goals and risk appetite. Keep in
+                    mind that applying for multiple lots does not guarantee full allotment, especially in oversubscribed
+                    IPOs.
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
